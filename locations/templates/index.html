@@ -1,0 +1,7 @@
+{% include 'partials/header.html' %}
+  <ul>
+    {% for location in locations %}
+      <li><a href="/locations/details/{{location.id}}">{{location.title}}</a>: {{location.text}}</li>
+    {% endfor %}
+  </ul>
+{% include 'partials/footer.html' %}
