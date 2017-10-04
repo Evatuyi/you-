@@ -32,6 +32,6 @@ def add(request):
         location = Location(title=title, text=text)
         location.save()
 
-        return redirect('/locations')
+        return redirect('/sherpa')
     else:
         return render(request, 'add.html')
