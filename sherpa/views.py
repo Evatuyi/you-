@@ -9,9 +9,8 @@ from .models import Location
 
 
 def index(request):
-    locations = Location.objects.all()[:10]
     context = {
-        'locations': locations
+    
     }
     return render(request, 'index.html', context)
 
@@ -35,3 +34,11 @@ def add(request):
         return redirect('/sherpa')
     else:
         return render(request, 'add.html')
+
+
+def location_list(request):
+    locations = Location.objects.all()[:10]
+    context = {
+        'locations': locations
+    }   
+    return render(request, 'location_list.html', context)

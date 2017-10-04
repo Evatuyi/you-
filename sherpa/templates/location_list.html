@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% include 'partials/header.html' %}
+ <br>
+  <ul class="locations" >
+    {% for location in locations %}
+      <li><a href="/sherpa/details/{{location.id}}">{{location.title}}</a>: {{location.text}}</li>
+    {% endfor %}
+  </ul>
+{% include 'partials/footer.html' %}

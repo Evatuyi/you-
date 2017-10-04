@@ -1,20 +1,55 @@
 
 /* navbar styling */
 
-.navbar-brand {
-  font-size: 23px;
+input[type=text] {
+	width: 200px;
+	height: 50px;
+	padding: 5px;
+	margin-top: 30px;
+	margin-bottom: center;
+	margin-left: 15px;
+	border-radius: 0 10px 10px 0;
+	border: 2px solid white;
+	border-radius: 4px;
+	text-align: left;
+	transition: width 0.4s ease-in-out;
 }
 
-.navbar-default {
-  background-color: #fff;
-  height: 54px;
+input[type=text]:focus {
+	width: 300%;
 }
 
-/*.navbar-container {
-  width: 70%;
-  margin: 0 auto;
-}*/
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #00899e;
+}
 
-.navbar-nav > li {
-  font-size: 16px;
+ul.locations {
+	color: black;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.locations a {
+	list-style-type: none;
+}
+
+li.nav {
+    float: left;
+}
+
+li.nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.nav a:hover {
+    background-color: #f6ebc9;
 }
